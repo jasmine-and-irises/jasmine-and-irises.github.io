@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Referrer-Policy" content="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta name="robots" content="index, nofollow, noimageindex, nocache" />
+        <meta name="application-name" content="GitHub Pages">
+
+        <meta name="author" content="Natalia Mika (hilgardite // irises and jasmine)" />
+        <meta name="author" content="Natalia Mika" />
+        <meta name="author" content="hilgardite" />
+        <meta name="author" content="irises and jasmine" />
+        <meta name="author" content="jasmine and irises" />
+
+        <meta name="copyright" content="&copy; 2025 Natalia Mika">
+
+        <meta name="subject" content="electronic literature">
+        <meta name="keywords" content="cyber literature, cyber poetry, cyberlit, cyberliteratura, cyberliterature, cyberpoetry, cyberpoezja, e-lit, e-literatura, e-literature, electronic literature, electronic poetry, generative art, generative poetry, interactive essay, interactive fiction, interactive literature, interactive poetry, literatura elektroniczna">
+
+        <title>irises and jasmine &#10042; &#8277; | GitHub Pages</title>
+
+        <link href="https://irises-and-jasmine.neocities.org/global-style.css" rel="stylesheet" media="all">
+
+        <style>
+            @keyframes headershrink {
+                from {
+                    font-size: 330%;
+                }
+                10% {
+                    font-size: 280%;
+                }
+            }
+            @counter-style checkbox {
+                system: cyclic;
+                symbols: "\1F78F";
+                suffix: "";
+                fallback: square;
+            }
+            * {
+                scroll-behavior: smooth;
+            }
+            *::selection {
+                background-color: black;
+                color: white;
+            }
+            li, p:not(header p) {
+                text-align: justify;
+                text-justify: newspaper;
+            }
+            header:not(header:has(hgroup)) {
+                display: flex;
+                flex: 1 1 0;
+                width: 100vw;
+                height: fit-content;
+                align-items: center;
+                align-content: center;
+                justify-items: center;
+                align-items: center;
+                background-color: black;
+                position: sticky;
+                top: 0%;
+                z-index: 999;
+                user-select: none;
+            }
+            header > h1:not(article > header h1) {
+                display: block;
+                width: fit-content;
+                color: white;
+                font-family: "Tangerine";
+                font-size: 280%;
+                margin: auto;
+                padding-inline: 1rem 1.2rem;
+                padding: 1rem 0 1.2rem 0;
+                align-self: center;
+                justify-self: center;
+                animation: headershrink linear;
+                animation-timeline: scroll(root);
+                animation-play-state: running;
+                user-select: none;
+            }
+            em {
+                display: inline-block;
+                background-color: aliceblue;
+                font-family: "Times New Roman";
+                font-style: normal;
+                user-select: none;
+            }
+            main {
+                width: 60vw;
+                padding: 2.5rem;
+                margin: auto;
+                z-index: 99;
+            }
+            hgroup > h1 {
+                display: block;
+                width: 100%;
+                text-align: center;
+                font-family: "Funnel Display", monospace;
+                font-size: 150%;
+                font-weight: 500;
+                border-bottom: 1px solid black;
+                margin-inline: auto;
+                align-self: center;
+                user-select: none;
+            }
+            hgroup > h1::before, hgroup > h1::after {
+                font-family: "Noto Sans Symbols 2";
+                font-size: 1.7rem;
+                font-weight: 400;
+            }
+            hgroup > h1::before {
+                font-family: "Noto Sans Symbols 2";
+                content: "\2055 \FF5E";
+            }
+            hgroup > h1::after {
+                font-family: "Noto Sans Symbols";
+                content: "\FF5E \2055";
+            }
+            hgroup > p {
+                display: block;
+                width: fit-content;
+                background-color: black;
+                color: white;
+                font-family: "Xanh Mono", serif;
+                font-size: 130%;
+                margin-left: 5rem;
+                margin-top: 2.5rem;
+                user-select: none;
+            }
+            section {
+                display: block;
+                font-size: 110%;
+                padding-top: 1.5rem;
+                padding-inline: 5rem;
+            }
+            p {
+                line-height: 1.5;
+                padding-inline: 1rem;
+                padding-block: 0;
+                margin: 0;
+            }
+            figure {
+                display: block;
+                padding: 2rem;
+                margin: auto;
+                justify-self: center;
+            }
+            blockquote {
+                display: block;
+                quotes: none;
+                /*font-family: "Xanh Mono";*/
+                font-style: italic;
+                margin: 0;
+                margin-left: -2rem;
+                padding-block: 1rem;
+                padding-inline: 3rem 0.5rem;
+            }
+            small {
+                display: block;
+                text-indent: 5rem;
+            }
+            hr {
+                display: block;
+                height: fit-content;
+                width: 15rem;
+                border: 0;
+                margin-inline: auto;
+                margin-block: 2rem;
+                padding-inline: 5rem;
+                overflow: visible;
+                position: relative;
+                align-self: center;
+                z-index: 9;
+            }
+            hr::after {
+                display: block;
+                height: fit-content;
+                width: fit-content;
+                content: "⁂";
+                margin-top: -1rem;
+                margin-inline: auto;
+                position: absolute;
+                top: -50%;
+                left: 50%;
+                z-index: 10;
+            }
+            h2 {
+                display: block;
+                width: fit-content;
+                background-color: lavender;
+                color: black;
+                font-family: "Inclusive Sans";
+                font-size: 100%;
+                font-weight: 400;
+                padding-block: 0.25rem;
+                position: relative;
+                user-select: none;
+            }
+            h2::before {
+                display: block;
+                content: "";
+                width: 50vw;
+                margin-left: -2rem;
+                margin-top: 0.6rem;
+                padding-inline: 1rem;
+                border-bottom: 1px double black;
+                position: absolute;
+                z-index: 3;
+            }
+            h2 > span {
+                position: relative;
+                background-color: lavender;
+                padding-inline: 1rem;
+                z-index: 4;
+            }
+            a:any-link {
+                color: black;
+            }
+            a:link {
+                color: black;
+                border-color: black;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                text-decoration: none;
+                border-bottom: 2px dotted black;
+            }
+            a:link:hover {
+                border-bottom: 2px double springgreen;
+            }
+            a:visited:hover, a:visited:focus {
+                background-color: lavender;
+                border-bottom: 2px double orchid;
+            }
+            a:visited {
+                background-color: rgb(240, 182, 255);
+                text-decoration: underline 2px wavy orchid;
+                border-bottom: 2px outset purple;
+            }
+            a:any-link:active {
+                background-color: black;
+                color: white;
+            }
+            ul {
+                list-style: inside;
+                list-style-type: checkbox;
+                font-family: "Noto Sans Symbols 2", "Cambria Math", sans-serif;
+                font-size: 95%;
+                padding-left: 0;
+            }
+            li {
+                line-height: 1.25;
+                font-family: "Times New Roman";
+                padding-inline: 1rem;
+                margin-block: 0.5rem;
+            }
+            li::marker {
+                content: counter(cyclic, "\1F78E");
+                font-family: "Noto Sans Symbols 2", "Cambria Math", sans-serif;
+                font-size: 95%;
+                font-weight: 400;
+                vertical-align: middle;
+            }
+            li:hover::marker {
+                content: counter(cyclic, "\1F795");
+                font-family: "Noto Sans Symbols 2", "Cambria Math", sans-serif;
+                font-size: 95%;
+                font-weight: 400;
+                vertical-align: middle;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>jasmine and irises</h1>
+        </header>
+        <main>
+            <article>
+                <header>
+                    <hgroup>
+                        <h1>welcome to <em>Jasmine and irises</em> GitHub page</h1>
+                        <p>Hello, Dear Person exploring the internet!</p>        
+                    </hgroup>
+                    <section>
+                        <p>
+                            My name is Natalia, I&#8217;m from Poland, and this is my GitHub page. <br>
+                            As you may see, it&#8217;s still much of a rough draft, a work in (li&shy;ttle and slow) pro&shy;g&shy;ress.</p>
+                            <figure>
+                                <blockquote>
+                                    This article is a stub
+                                </blockquote>
+                                <small>(&mdash; to quote Wikipedia)</small>
+                            </figure>                        
+                    </section>
+                </header>
+                <!-- <hr> -->
+                <section>
+                    <h2>
+                        <span>there&#8217;s nothing here&hellip;</span>
+                    </h2>
+                    <p>I think GitHub Pages is a&nbsp;very nice so&shy;lu&shy;tion and will use it one day to share some of my more co&shy;ding-re&shy;la&shy;ted pro&shy;jects.</p>
+                    <p>I&#8217;ll add some re&shy;sour&shy;ces here (or on a&nbsp;re&shy;le&shy;vant pro&shy;ject&#8217;s page, linked) once I feel they&#8217;re ready to be shared.</p>
+                    <p>Cu&shy;rrent&shy;ly, I&#8217;m fo&shy;cu&shy;sing on buil&shy;ding <a href="https://irises-and-jasmine.neocities.org/" title="»jasmine and irises« on Neocities. Click the anchor to open the link in a new tab" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">my per&shy;so&shy;nal site at Neocities</a>, which is&nbsp;more de&shy;vou&shy;ted&nbsp;to ar&shy;ti&shy;s&shy;tic works and&nbsp;text ske&shy;tches.</p>
+                </section>
+                <section>
+                    <h2>
+                        <span>some of the&nbsp;things I wish to upload here once in the&nbsp;future</span>
+                    </h2>
+                    <ul>
+                        <li>
+                            custom Tumblr themes (I need&nbsp;to learn a&nbsp;bit more about Tumblr&#8217;s special tags yet, and&nbsp;study all their linked premade stylesheets &&nbsp;scripts so I&#8217;ll be able&nbsp;to fully design a&nbsp;new, functional theme by hand)
+                        </li>
+                        <li>
+                            tutorials and&nbsp;scripts for kinetic poetry and interactions in e-literature
+                        </li>
+                        <li>
+                            how to clean&nbsp;up a&nbsp;Twine code once it&nbsp;is ex&shy;por&shy;ted, fix some a&nbsp;bit &nbsp;a&shy;nno&shy;ying and&nbsp;unuseful built-in fea&shy;tures and make the work more fun&shy;ctio&shy;nal and acce&shy;ssi&shy;ble
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+    </body>
+</html>
